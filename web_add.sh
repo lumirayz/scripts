@@ -18,6 +18,7 @@ server {
     listen 80;
     listen [::]:80;
     access_log /web/log/${USER}_access.log;
+		error_log /web/log/${USER}_error.log;
     expires off;
     root /web/$USER/\$host/;
 }
